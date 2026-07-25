@@ -1,0 +1,77 @@
+[
+  {
+    "id": "q_start",
+    "text": "Var fångades fisken?",
+    "helpText": "Välj det vatten där du fångade fisken."
+  },
+  {
+    "id": "q_vast_salt",
+    "text": "Har fisken skäggtrans under hakan?",
+    "helpText": "En skäggtrans är ett litet köttigt utskott som sitter under hakan, liknande ett kattmorrhår."
+  },
+  {
+    "id": "q_vast_pelagisk",
+    "text": "Har fisken tydliga mörka snedstrimmor på ryggen och en silvrig buk?",
+    "helpText": "Titta på ryggens mönster – makrillen har karaktäristiska blåsvarta vågiga strimmor."
+  },
+  {
+    "id": "q_vast_platt",
+    "text": "Är fisken plattfisk (oval och platt med båda ögonen på samma sida)?",
+    "helpText": "Plattfiskar lever på botten och har anpassat sig med ett platt, ovalt utseende."
+  },
+  {
+    "id": "q_vast_lax",
+    "text": "Har fisken en liten extra fena (adiposa fena) mellan ryggfenan och stjärtfenan?",
+    "helpText": "Adiposa fenan är en liten, köttfull fena utan fenstrålor som laxfiskar har."
+  },
+  {
+    "id": "q_ost_brack",
+    "text": "Är fisken plattfisk (oval och platt med båda ögonen på samma sida)?",
+    "helpText": "Plattfiskar lever på botten och har anpassat sig med ett platt, ovalt utseende."
+  },
+  {
+    "id": "q_ost_abbfamilj",
+    "text": "Har fisken tydliga mörka tvärstrimmor på sidan och röda bukfenor?",
+    "helpText": "Abborren har karaktäristiska mörka band tvärs kroppen och påfallande röda fenor på buken."
+  },
+  {
+    "id": "q_ost_stor",
+    "text": "Är fisken stor (>40 cm) med stora glansiga ögon och utan tydliga tvärstrimmor?",
+    "helpText": "Gösen har ögon som reflekterar ljus och saknar abborrens markerade tvärband."
+  },
+  {
+    "id": "q_ost_sill",
+    "text": "Är fisken silvrig och strömlinjeformad utan synliga fjäll på huvudet, under 40 cm?",
+    "helpText": "Strömmingen är liten och silvrig med kölfjäll längs buken och ingen skäggtrans."
+  },
+  {
+    "id": "q_insjö_rovfisk",
+    "text": "Är fisken en avlång rovfisk med spjutformat huvud och stor mun?",
+    "helpText": "Gäddan har ett karaktäristiskt andformigt, brett och platt huvud med många vassa tänder."
+  },
+  {
+    "id": "q_insjö_adiposa",
+    "text": "Har fisken en liten extra fena (adiposa fena) mellan ryggfenan och stjärtfenan?",
+    "helpText": "Adiposa fenan är en liten, köttfull fena utan fenstrålar som finns hos laxfiskar och röding."
+  },
+  {
+    "id": "q_insjö_fläckar",
+    "text": "Har fisken röda och/eller orange fläckar med ljusa ringar längs sidorna?",
+    "helpText": "Rödingen har karaktäristiska ljusomrandade fläckar, ofta med röd/orange ton."
+  },
+  {
+    "id": "q_insjö_lax_oring",
+    "text": "Har fisken fläckar även under sidolinjen och ett brett stjärtskaft?",
+    "helpText": "Öringen har fläckar nedanför sidolinjen och ett kraftigare stjärtskaft jämfört med laxen."
+  },
+  {
+    "id": "q_insjö_abbfamilj",
+    "text": "Har fisken tydliga mörka tvärstrimmor på sidan och röda bukfenor?",
+    "helpText": "Abborren har karaktäristiska mörka band tvärs kroppen och påfallande röda fenor på buken."
+  },
+  {
+    "id": "q_insjö_gos",
+    "text": "Är fisken stor (>40 cm) med stora glansiga ögon och utan tydliga tvärstrimmor?",
+    "helpText": "Gösen har ögon som reflekterar ljus och saknar abborrens markerade tvärband."
+  }
+]

@@ -1,0 +1,128 @@
+{
+  "root": "n_start",
+  "nodes": {
+    "n_start": {
+      "question_id": "q_start",
+      "branches": {
+        "västkusten": "n_vast_1",
+        "östkusten": "n_ost_1",
+        "insjö": "n_insjö_1"
+      }
+    },
+
+    "n_vast_1": {
+      "question_id": "q_vast_salt",
+      "branches": {
+        "ja": "result_torsk",
+        "nej": "n_vast_2"
+      }
+    },
+    "n_vast_2": {
+      "question_id": "q_vast_pelagisk",
+      "branches": {
+        "ja": "result_makrill",
+        "nej": "n_vast_3"
+      }
+    },
+    "n_vast_3": {
+      "question_id": "q_vast_platt",
+      "branches": {
+        "ja": "result_flundra",
+        "nej": "n_vast_4"
+      }
+    },
+    "n_vast_4": {
+      "question_id": "q_vast_lax",
+      "branches": {
+        "ja": "result_oring",
+        "nej": "result_okänd_vast"
+      }
+    },
+
+    "n_ost_1": {
+      "question_id": "q_ost_brack",
+      "branches": {
+        "ja": "result_flundra",
+        "nej": "n_ost_2"
+      }
+    },
+    "n_ost_2": {
+      "question_id": "q_ost_abbfamilj",
+      "branches": {
+        "ja": "result_abborre",
+        "nej": "n_ost_3"
+      }
+    },
+    "n_ost_3": {
+      "question_id": "q_ost_stor",
+      "branches": {
+        "ja": "result_gos",
+        "nej": "n_ost_4"
+      }
+    },
+    "n_ost_4": {
+      "question_id": "q_ost_sill",
+      "branches": {
+        "ja": "result_stromming",
+        "nej": "result_torsk"
+      }
+    },
+
+    "n_insjö_1": {
+      "question_id": "q_insjö_rovfisk",
+      "branches": {
+        "ja": "result_gadda",
+        "nej": "n_insjö_2"
+      }
+    },
+    "n_insjö_2": {
+      "question_id": "q_insjö_adiposa",
+      "branches": {
+        "ja": "n_insjö_3",
+        "nej": "n_insjö_5"
+      }
+    },
+    "n_insjö_3": {
+      "question_id": "q_insjö_fläckar",
+      "branches": {
+        "ja": "result_roding",
+        "nej": "n_insjö_4"
+      }
+    },
+    "n_insjö_4": {
+      "question_id": "q_insjö_lax_oring",
+      "branches": {
+        "ja": "result_oring",
+        "nej": "result_lax"
+      }
+    },
+    "n_insjö_5": {
+      "question_id": "q_insjö_abbfamilj",
+      "branches": {
+        "ja": "result_abborre",
+        "nej": "n_insjö_6"
+      }
+    },
+    "n_insjö_6": {
+      "question_id": "q_insjö_gos",
+      "branches": {
+        "ja": "result_gos",
+        "nej": "result_okänd_insjö"
+      }
+    },
+
+    "result_gadda":    { "species_id": "gadda" },
+    "result_abborre":  { "species_id": "abborre" },
+    "result_gos":      { "species_id": "gos" },
+    "result_roding":   { "species_id": "roding" },
+    "result_lax":      { "species_id": "lax" },
+    "result_oring":    { "species_id": "oring" },
+    "result_torsk":    { "species_id": "torsk" },
+    "result_makrill":  { "species_id": "makrill" },
+    "result_stromming":{ "species_id": "stromming" },
+    "result_flundra":  { "species_id": "flundra" },
+
+    "result_okänd_vast":  { "species_id": null },
+    "result_okänd_insjö": { "species_id": null }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Fisknyckel – Identifiera din fisk",
+  "short_name": "Fisknyckel",
+  "description": "Identifieringsnyckel för svenska sportfiskare – bestäm vilken fisk du fångat.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f172a",
+  "theme_color": "#0369a1",
+  "icons": [
+    {
+      "src": "/icons/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/icons/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

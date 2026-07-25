@@ -1,0 +1,133 @@
+[
+    {
+        "id":  "gadda",
+        "swedish_name":  "Gädda",
+        "latin_name":  "Esox lucius",
+        "description":  "Gäddan är ett av Sveriges vanligaste rovfiskar och finns i de flesta sjöar och vattendrag. Den känns igen på sin långa, torpedformade kropp, spjutformade huvud och stora mun med vassa tänder. Ryggen är olivgrön till brungrå med ljusare fläckar och buksidan är gulvit. Gäddan är en effektiv rovfisk som jagar med blixtattacker från stillastående läge.",
+        "identifying_features":  [
+                                     "Lång torpedkropp",
+                                     "Spjutformat huvud",
+                                     "Stor mun med vassa tänder",
+                                     "Olivgrön/brungrå färg med ljusa fläckar"
+                                 ],
+        "image":  null
+    },
+    {
+        "id":  "abborre",
+        "swedish_name":  "Abborre",
+        "latin_name":  "Perca fluviatilis",
+        "description":  "Abborren är en av Sveriges allra vanligaste fiskar och förekommer i nästan alla sjöar, vattendrag och längs kusterna. Den är lätt att känna igen på de tydliga mörka tvärstrimmorna på sidan och de karaktäristiska röda bukfenorna. Ryggen är gröngul och buken vit till gul. Abborren har två ryggfenor varav den främre bär taggiga fenstrålor.",
+        "identifying_features":  [
+                                     "Tydliga mörka tvärstrimmor",
+                                     "Röda bukfenor",
+                                     "Gröngul rygg",
+                                     "Taggig första ryggfena"
+                                 ],
+        "image":  null
+    },
+    {
+        "id":  "gos",
+        "swedish_name":  "Gös",
+        "latin_name":  "Sander lucioperca",
+        "description":  "Gösen är en stor rovfisk som lever i sjöar, vattendrag och brackvatten längs Östersjökusten. Den liknar abborren men saknar de tydliga tvärstrimmorna och är mer strömlinjeformad. Ögonen är stora och glansiga, anpassade för att jaga i dunkelt vatten. Kroppen är gulgråaktig med svagt marmorerat mönster.",
+        "identifying_features":  [
+                                     "Stor och glansig ögon",
+                                     "Gulgråaktig kropp",
+                                     "Liknar abborre men saknar tydliga tvärstrimmor",
+                                     "Lång strömlinjeformad kropp"
+                                 ],
+        "image":  null
+    },
+    {
+        "id":  "roding",
+        "swedish_name":  "Röding",
+        "latin_name":  "Salvelinus alpinus",
+        "description":  "Rödingen är en kräsen fisk som kräver kallt, klart och syrerikt vatten och finns främst i djupa, oligotrofa fjäll- och inlandssjöar. Kroppen är silvrig till gröngul med röda och orange fläckar längs sidorna. Under lektiden blir hannarnas buk intensivt orange till röd. Rödingen är nära besläktad med laxen och öringen.",
+        "identifying_features":  [
+                                     "Silvrig kropp med röda/orange fläckar",
+                                     "Vita kanter på bukfenorna",
+                                     "Kräver kallt och klart vatten",
+                                     "Liten adiposa fena"
+                                 ],
+        "image":  null
+    },
+    {
+        "id":  "lax",
+        "swedish_name":  "Lax",
+        "latin_name":  "Salmo salar",
+        "description":  "Atlantlaxen är en av Sveriges mest eftertraktade sportfiskar. Den föds i sötvatten, vandrar till havet för att växa till och återvänder sedan till sin födelseälv för att leka. I havet är laxen silvrig med svarta fläckar ovanför sidolinjen. Under lekvandringar upp i älvar förändras färgen och hannar får krokformad underkäke (krok).",
+        "identifying_features":  [
+                                     "Silvrig med svarta fläckar ovanför sidolinjen",
+                                     "Liten adiposa fena",
+                                     "Kraftig kropp",
+                                     "X-formade fläckar på sidorna i havet"
+                                 ],
+        "image":  null
+    },
+    {
+        "id":  "oring",
+        "swedish_name":  "Öring",
+        "latin_name":  "Salmo trutta",
+        "description":  "Öringen är en av Sveriges mest spridda sportfiskar och förekommer i tre former: bäcköring (stationär i sötvatten), insjööring och havsöring (vandrar till havet). Kroppen är täckt av svarta och röda fläckar med ljusa ringar. Havsöringen är silvrig i havet men antar brunare färger i sötvatten. Liknar lax men har bredare stjärtskaft och fler fläckar under sidolinjen.",
+        "identifying_features":  [
+                                     "Svarta och röda fläckar med ljusa ringar",
+                                     "Bredare stjärtskaft än lax",
+                                     "Fläckar även under sidolinjen",
+                                     "Liten adiposa fena"
+                                 ],
+        "image":  null
+    },
+    {
+        "id":  "torsk",
+        "swedish_name":  "Torsk",
+        "latin_name":  "Gadus morhua",
+        "description":  "Torsken är en av de kommersiellt viktigaste fiskarna och förekommer i Nordatlanten och Nordsjön samt i Östersjön (i minskande antal). Den känns lätt igen på skäggtransen under hakan och de tre ryggfenorna. Kroppen är gröngul till brun med mörka fläckar och ett tydligt sidolinjemönster. Buken är vit och sidolinjen ljusfärgad.",
+        "identifying_features":  [
+                                     "Skäggtrans under hakan",
+                                     "Tre ryggfenor och två analfenor",
+                                     "Tydlig ljus sidolinje",
+                                     "Gröngul/brun kropp med fläckar"
+                                 ],
+        "image":  null
+    },
+    {
+        "id":  "makrill",
+        "swedish_name":  "Makrill",
+        "latin_name":  "Scomber scombrus",
+        "description":  "Makrillen är en snabbsimmande pelagisk fisk som vandrar i stora stim längs Sveriges västkust under sommaren. Kroppen är strömlinjeformad och metallskimrande blågrön med karaktäristiska svarta snedstrimmor på ryggen. Buken är silvervit. Makrillen saknar simblåsa och måste simma konstant för att inte sjunka.",
+        "identifying_features":  [
+                                     "Blågrön rygg med svarta snedstrimmor",
+                                     "Silvervit buk",
+                                     "Strömlinjeformad kropp",
+                                     "Liten finfenar längs stjärtroten"
+                                 ],
+        "image":  null
+    },
+    {
+        "id":  "stromming",
+        "swedish_name":  "Strömming",
+        "latin_name":  "Clupea harengus membras",
+        "description":  "Strömmingen är den östersjöform av sill som är mindre än atlanto-skandisk sill. Den lever i stora stim i Östersjön och är en av de ekonomiskt viktigaste fiskarterna i regionen. Kroppen är silvrig och strömlinjeformad utan fjäll på huvudet. Ryggen är gröngul till blå. Strömmingen skiljer sig från sillen framför allt i storlek och salthaltstolerans.",
+        "identifying_features":  [
+                                     "Silvrig strömlinjeformad kropp",
+                                     "Gröngul till blå rygg",
+                                     "Tandlös",
+                                     "Kölfjäll längs buken",
+                                     "Saknar fjäll på huvudet"
+                                 ],
+        "image":  null
+    },
+    {
+        "id":  "flundra",
+        "swedish_name":  "Flundra",
+        "latin_name":  "Platichthys flesus",
+        "description":  "Flundran är en plattfisk som lever nerbäddad i sand- och lerbottnar i grunt vatten längs Sveriges kuster. Kroppen är platt och oval med båda ögonen på höger sida (ibland vänster). Ovansidan är brungrå till olivfärgad och anpassar sig till bottenfärgen. Undersidan är vit. Flundran kan tolerera brackvatten och finns i hela Östersjön.",
+        "identifying_features":  [
+                                     "Platt oval kropp",
+                                     "Båda ögon på samma sida",
+                                     "Brungrå ovansida, vit undersida",
+                                     "Taggiga fjäll längs sidolinjen"
+                                 ],
+        "image":  null
+    }
+]
