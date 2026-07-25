@@ -58,24 +58,24 @@ export default function SpeciesList() {
         {filtered.map((s) => (
           <Link key={s.id} href={`/arter/${s.id}`} className="block">
             <Card className="border-sky-100 shadow-sm hover:shadow-md hover:border-sky-300 transition-all cursor-pointer">
-            <CardHeader className="pb-2">
-              <div className="flex items-start justify-between gap-2">
-                <div>
-                  <CardTitle className="text-xl text-slate-800">
-                    {s.swedish_name}
-                  </CardTitle>
-                  <p className="text-sm text-slate-500 italic">
-                    {s.latin_name}
-                  </p>
+              <CardHeader className="pb-2">
+                <div className="flex items-start justify-between gap-2">
+                  <div>
+                    <CardTitle className="text-xl text-slate-800">
+                      {s.swedish_name}
+                    </CardTitle>
+                    <p className="text-sm text-slate-500 italic">
+                      {s.latin_name}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </CardHeader>
-            <CardContent className="space-y-3">
-              <p className="text-sm text-slate-600 leading-relaxed line-clamp-3">
-                {s.description}
-              </p>
-            </CardContent>
-          </Card>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <p className="text-sm text-slate-600 leading-relaxed line-clamp-3">
+                  {s.description}
+                </p>
+              </CardContent>
+            </Card>
           </Link>
         ))}
       </div>

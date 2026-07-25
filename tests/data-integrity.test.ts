@@ -5,10 +5,14 @@ import { resolve } from "path";
 // --- Ladda datafiler ---
 const root = resolve(__dirname, "../data");
 
-const species: any[] = JSON.parse(readFileSync(`${root}/species.json`, "utf-8"));
-const questions: any[] = JSON.parse(readFileSync(`${root}/questions.json`, "utf-8"));
+const species: any[] = JSON.parse(
+  readFileSync(`${root}/species.json`, "utf-8"),
+);
+const questions: any[] = JSON.parse(
+  readFileSync(`${root}/questions.json`, "utf-8"),
+);
 const treeRaw: { root: string; nodes: Record<string, any> } = JSON.parse(
-  readFileSync(`${root}/tree.json`, "utf-8")
+  readFileSync(`${root}/tree.json`, "utf-8"),
 );
 
 const speciesIds = new Set(species.map((s) => s.id));
@@ -47,7 +51,13 @@ describe("species.json", () => {
     expect(unique.size).toBe(ids.length);
   });
 
-  const required = ["id", "swedish_name", "latin_name", "description", "identifying_features"];
+  const required = [
+    "id",
+    "swedish_name",
+    "latin_name",
+    "description",
+    "identifying_features",
+  ];
   for (const field of required) {
     it(`varje art ska ha fältet '${field}'`, () => {
       for (const s of species) {
@@ -61,11 +71,11 @@ describe("species.json", () => {
     for (const s of species) {
       expect(
         Array.isArray(s.identifying_features),
-        `${s.id}.identifying_features är inte en array`
+        `${s.id}.identifying_features är inte en array`,
       ).toBe(true);
       expect(
         s.identifying_features.length,
-        `${s.id} har inga identifying_features`
+        `${s.id} har inga identifying_features`,
       ).toBeGreaterThan(0);
     }
   });
@@ -114,11 +124,11 @@ describe("tree.json – grundstruktur", () => {
       const isLeaf = "species_id" in node;
       expect(
         isQuestion || isLeaf,
-        `Nod '${id}' är varken frågenod eller löv`
+        `Nod '${id}' är varken frågenod eller löv`,
       ).toBe(true);
       expect(
         !(isQuestion && isLeaf),
-        `Nod '${id}' är både frågenod och löv`
+        `Nod '${id}' är både frågenod och löv`,
       ).toBe(true);
     }
   });
@@ -133,7 +143,7 @@ describe("tree.json – referensintegritet", () => {
       if ("question_id" in node) {
         expect(
           questionIds.has(node.question_id),
-          `Nod '${id}' refererar till okänd question_id '${node.question_id}'`
+          `Nod '${id}' refererar till okänd question_id '${node.question_id}'`,
         ).toBe(true);
       }
     }
@@ -142,10 +152,13 @@ describe("tree.json – referensintegritet", () => {
   it("alla branches-värden ska peka på en befintlig nod", () => {
     for (const [id, node] of Object.entries(treeRaw.nodes)) {
       if ("branches" in node) {
-        for (const [answer, nextId] of Object.entries(node.branches) as [string, string][]) {
+        for (const [answer, nextId] of Object.entries(node.branches) as [
+          string,
+          string,
+        ][]) {
           expect(
             nodeIds.has(nextId),
-            `Nod '${id}', svar '${answer}' pekar på okänd nod '${nextId}'`
+            `Nod '${id}', svar '${answer}' pekar på okänd nod '${nextId}'`,
           ).toBe(true);
         }
       }
@@ -157,7 +170,7 @@ describe("tree.json – referensintegritet", () => {
       if ("species_id" in node && node.species_id !== null) {
         expect(
           speciesIds.has(node.species_id),
-          `Löv-nod '${id}' refererar till okänd species_id '${node.species_id}'`
+          `Löv-nod '${id}' refererar till okänd species_id '${node.species_id}'`,
         ).toBe(true);
       }
     }
@@ -172,7 +185,9 @@ describe("tree.json – nåbarhet", () => {
 
   it("alla noder ska vara nåbara från roten", () => {
     for (const id of nodeIds) {
-      expect(reached.has(id), `Nod '${id}' är inte nåbar från roten`).toBe(true);
+      expect(reached.has(id), `Nod '${id}' är inte nåbar från roten`).toBe(
+        true,
+      );
     }
   });
 
@@ -186,7 +201,7 @@ describe("tree.json – nåbarhet", () => {
     for (const s of species) {
       expect(
         speciesInTree.has(s.id),
-        `Art '${s.id}' (${s.swedish_name}) har inget löv i trädet`
+        `Art '${s.id}' (${s.swedish_name}) har inget löv i trädet`,
       ).toBe(true);
     }
   });
@@ -199,7 +214,7 @@ describe("tree.json – nåbarhet", () => {
     for (const q of questions) {
       expect(
         usedQuestions.has(q.id),
-        `Fråga '${q.id}' används inte i trädet`
+        `Fråga '${q.id}' används inte i trädet`,
       ).toBe(true);
     }
   });
@@ -220,7 +235,10 @@ describe("tree.json – cykler och dead ends", () => {
       }
       return false;
     }
-    expect(hasCycle(treeRaw.root, new Set()), `Trädet innehåller en cykel`).toBe(false);
+    expect(
+      hasCycle(treeRaw.root, new Set()),
+      `Trädet innehåller en cykel`,
+    ).toBe(false);
   });
 
   it("alla grenar från en frågenod ska leda till ett löv", () => {
@@ -239,7 +257,7 @@ describe("tree.json – cykler och dead ends", () => {
       if ("branches" in node) {
         expect(
           leadsToLeaf(id),
-          `Nod '${id}' har en gren som aldrig leder till ett löv`
+          `Nod '${id}' har en gren som aldrig leder till ett löv`,
         ).toBe(true);
       }
     }

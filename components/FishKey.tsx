@@ -96,12 +96,18 @@ export default function FishKey() {
         {found ? (
           <div className="bg-white rounded-2xl shadow-md border border-sky-100 overflow-hidden">
             <div className="bg-sky-700 px-6 py-4">
-              <p className="text-sky-200 text-sm font-medium mb-1">Din fisk är troligen:</p>
-              <h2 className="text-white text-3xl font-bold">{found.swedish_name}</h2>
+              <p className="text-sky-200 text-sm font-medium mb-1">
+                Din fisk är troligen:
+              </p>
+              <h2 className="text-white text-3xl font-bold">
+                {found.swedish_name}
+              </h2>
               <p className="text-sky-200 italic text-lg">{found.latin_name}</p>
             </div>
             <div className="p-6 space-y-4">
-              <p className="text-slate-700 leading-relaxed">{found.description}</p>
+              <p className="text-slate-700 leading-relaxed">
+                {found.description}
+              </p>
               <Link
                 href={`/arter/${found.id}`}
                 className="inline-flex items-center gap-2 text-sky-700 hover:text-sky-900 font-medium text-sm"
@@ -113,10 +119,13 @@ export default function FishKey() {
         ) : (
           <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6 text-center space-y-2">
             <p className="text-2xl">🤔</p>
-            <h2 className="text-xl font-bold text-amber-800">Kunde inte identifiera fisken</h2>
+            <h2 className="text-xl font-bold text-amber-800">
+              Kunde inte identifiera fisken
+            </h2>
             <p className="text-amber-700 text-sm">
               Den här kombinationen av kännetecken matchar ingen av arterna i
-              databasen. Fisken kan vara ovanlig, ett korsningsexemplar eller inte inkluderad ännu.
+              databasen. Fisken kan vara ovanlig, ett korsningsexemplar eller
+              inte inkluderad ännu.
             </p>
           </div>
         )}
@@ -124,7 +133,10 @@ export default function FishKey() {
           <Button variant="outline" onClick={handleBack} className="flex-1">
             ← Tillbaka
           </Button>
-          <Button onClick={handleReset} className="flex-1 bg-sky-700 hover:bg-sky-800">
+          <Button
+            onClick={handleReset}
+            className="flex-1 bg-sky-700 hover:bg-sky-800"
+          >
             Börja om
           </Button>
         </div>
